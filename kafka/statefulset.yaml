@@ -31,8 +31,8 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: status.podIP
-        - name: KAFKA_LISTENERS_COMMAND
-          value: "echo \"PLAINTEXT://kafka-broker.kafka.svc.cluster.local:9092\""
+    #    - name: KAFKA_LISTENERS_COMMAND
+     #     value: "echo \"PLAINTEXT://kafka-broker.kafka.svc.cluster.local:9092\""
         - name: KAFKA_LOG4J_OPTS
           value: "-Dlog4j.configuration=file:/opt/kafka/config/log4j.properties"
         - name: BROKER_ID_COMMAND
